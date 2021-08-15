@@ -1,0 +1,9 @@
+version: '3'
+services:
+  monitoring:
+    restart: always
+    image: quay.io/influxdb/influxdb:v2.0.3
+    ports:
+      - 8086:8086
+    volumes:
+      - /influx:/root/.influxdbv2
